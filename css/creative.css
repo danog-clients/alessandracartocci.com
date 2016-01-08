@@ -651,3 +651,7 @@ body {
     display: none;
     opacity: 0;
 }
+
+.grasso {
+    font-weight: bold
+}
