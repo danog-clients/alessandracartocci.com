@@ -236,11 +236,7 @@ function() {
         e.preventDefault();
         $(this).tab("show");
     });
-    $(".short").shorten({
-        moreText: 'pi&ugrave;',
-        lessText: 'meno',
-        showChars: 210,
-    });
+
 }
 );
 
