@@ -95,18 +95,17 @@
             });
             $(".me").typed({
                 strings: ["VOCAL TRAINER", "PIANISTA", "MUSIC THERAPIST", "MAMMA", "PERDE LA TESTA DI FRONTE ALLE NOCCIOLINE"],
-                backDelay: 500,
-                // loop
-                loop: false,
-                // false = infinite
-                loopCount: false,
-                // show cursor
-                showCursor: true,
-                // character for cursor
-                cursorChar: "",
-                typeSpeed: 0
+                typeSpeed: 50,
+                backSpeed: 25,
+                startDelay: 0,
+                backDelay: 2000,
+                randomize: 100,
+                cursorChar: '|', 
+                showCursor:true,
+                loop:true,
+                contentType: 'html', 
+                loopCount: false
             });
-        });
     </script>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
