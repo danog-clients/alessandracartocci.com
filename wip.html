@@ -82,6 +82,9 @@
     <script src="js/jqBootstrapValidation.js"></script>
 
     <script type="text/javascript" src="https://cdn.rawgit.com/viralpatel/jquery.shorten/master/src/jquery.shorten.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/mattboldt/typed.js/master/js/typed.js"></script>
+
+
     <script src="js/contact_me.js?v=dragonsofberk"></script>
     <script language="javascript">
         $(document).ready(function() {
@@ -89,6 +92,10 @@
                 moreText: 'espandi',
                 lessText: 'restringi',
                 showChars: 210,
+            });
+            $(".me").typed({
+                strings: ["VOCAL TRAINER", "PIANISTA", "USIC THERAPIST", "MAMMA", "PERDE LA TESTA DI FRONTE ALLE NOCCIOLINE"],
+                typeSpeed: 0
             });
         });
     </script>
@@ -199,7 +206,7 @@
                         <div id="success2"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" id="btnSubmit2" class="btn btn-primary btn-xl">Oh yeah!</button>
+                                <button type="submit" id="btnSubmit2" class="btn btn-primary btn-xl">Ma si dai!</button>
                             </div>
                         </div>
                     </form>
@@ -217,7 +224,8 @@
                     <h2 class="section-heading">Chi &egrave; Alessandra Cartocci?</h2>
                     <hr class="light">
                     <h3 class="grasso">SCOPRITRICE DI VOCI</h3>
-                    <p>VOCAL TRAINER, PIANISTA, MUSIC THERAPIST, MAMMA, PERDE LA TESTA DI FRONTE ALLE NOCCIOLINE<br><br><a data-toggle="modal" href="#bio" class="btn btn-default btn-xl portfolio-link">Su di me!</a></p>
+                    <div class="me">
+                    <p></div><br><br><a data-toggle="modal" href="#bio" class="btn btn-default btn-xl portfolio-link">Su di me!</a></p>
                     <a href="#tips" class="btn btn-default btn-xl page-scroll">Top tips!</a>
                 </div>
             </div>
