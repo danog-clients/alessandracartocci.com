@@ -655,3 +655,7 @@ body {
 .grasso {
     font-weight: bold
 }
+
+a.morelink {
+    color: #ffffff;
+}
