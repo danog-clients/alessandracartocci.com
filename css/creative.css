@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: 'Coming soon','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Didact Gothic','Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Coming soon','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Didact Gothic','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -441,7 +441,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Coming soon','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Didact Gothic','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
 }
 
