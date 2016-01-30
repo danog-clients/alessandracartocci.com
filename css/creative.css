@@ -16,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #F00000;
+    border-color: #D00000;
     border-width: 3px;
 }
 
@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #F00000;
+    color: #D00000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -51,7 +51,7 @@ p {
     line-height: 1.5;
 }
 .bg-primary {
-    background-color: #F00000;
+    background-color: #D00000;
 }
 
 .bg-dark {
@@ -88,7 +88,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #F00000;
+    color: #D00000;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -106,12 +106,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #F00000;
+    color: #D00000;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #F00000!important;
+    color: #D00000!important;
     background-color: transparent;
 }
 
@@ -152,7 +152,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #F00000;
+        color: #D00000;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -167,7 +167,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #F00000;
+        color: #D00000;
     }
 }
 
@@ -274,7 +274,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,0,0,.9);
+    background: rgba(208,0,0,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -323,7 +323,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #F00000;
+    color: #D00000;
 }
 
 .no-gutter > [class*=col-] {
@@ -385,9 +385,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #F00000;
+    border-color: #D00000;
     color: #fff;
-    background-color: #F00000;
+    background-color: #D00000;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -428,12 +428,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #F00000;
-    background-color: #F00000;
+    border-color: #D00000;
+    background-color: #D00000;
 }
 
 .btn-primary .badge {
-    color: #F00000;
+    color: #D00000;
     background-color: #fff;
 }
 
@@ -512,11 +512,11 @@ body {
 }
 
 .box {
-  background-color: rgba(240, 0, 0, .8);
+  background-color: rgba(208, 0, 0, .8);
 };
 
 .mobile-box {
-  background-color: rgba(240, 0, 0, .8);
+  background-color: rgba(208, 0, 0, .8);
 
 }
 
@@ -525,7 +525,7 @@ body {
 };
 
 #tips {
-  background-color: rgba(240, 0, 0, .8);
+  background-color: rgba(208, 0, 0, .8);
 
 }
 
@@ -547,7 +547,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(240,0,0,.9);
+    background: rgba(208,0,0,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -631,7 +631,7 @@ body {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #f00000;
+    background-color: #D00000;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -641,7 +641,7 @@ body {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #f00000;
+    background-color: #D00000;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
