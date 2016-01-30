@@ -653,17 +653,17 @@ body {
 }
 
 .grasso {
-    font-weight: bold
+    font-weight: bold;
 }
 
 a.short {
     color: #ffffff;
-    font-weight: bold
+    font-weight: bold;
 }
 
 
-a.riduci {
-    color: #d00000;
-    font-weight: bold
+a.morelink {
+    color: #000;
+    font-weight: bold;
 }
 
