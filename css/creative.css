@@ -656,7 +656,14 @@ body {
     font-weight: bold
 }
 
-a.morelink {
+a.short {
     color: #ffffff;
     font-weight: bold
 }
+
+
+a.riduci {
+    color: #d00000;
+    font-weight: bold
+}
+
