@@ -170,14 +170,14 @@ aside {
         color: #D00000;
     }
 }
-
+video { display: block; } 
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.gif);
+    background-image: url(../bg/header.jpg);
     background-position: left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
