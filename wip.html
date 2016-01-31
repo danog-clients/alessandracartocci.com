@@ -40,8 +40,8 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <script>document.createElement('video');</script>
     <![endif]-->
+
 </head>
 
 <body id="page-top">
@@ -65,7 +65,7 @@
 
     <script type="text/javascript" src="/js/jquery.shorten.min.js"></script>
     <script type="text/javascript" src="/js/typed.js"></script>
-
+    <script type="text/javascript" src="/js/jquery.vide.js"></script>
 
     <script src="js/contact_me.js?v=dragonsofberk"></script>
     <script>
@@ -132,14 +132,10 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header data-vide-bg="mp4: /bg/header.mp4, webm: /bg/header.webm, ogv: /bg/header.ogv, poster: /bg/header.jpg" data-vide-options="position: 0% 50%">
         <div class="header-content">
             <div class="header-content-inner">
-                <video autoplay loop muted poster="/bg/header.jpg" id="bgvid">
-                    <!-- MP4 must be first for iPad! -->
-                    <source src="/bg/header.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
-                    <source src="/bg/header.webm" type="video/webm" /><!-- Firefox / Opera / Chrome10 -->
-                </video>
+
                 <!-- Desktop -->
                 <div class="visible-lg visible-md visible-sm hidden-xs">
                     <div class="flex-box">
