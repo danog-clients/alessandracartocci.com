@@ -35,7 +35,7 @@
 .interdimensional-control.interdimensional-control-is-active {
   opacity: 0.3;
   border: none;
-  background: #ff4336;
+  background: #00d0d0;
 }
 
 .interdimensional-control:before,
@@ -56,7 +56,7 @@
 
 .interdimensional-control.interdimensional-control-is-active:before {
   opacity: 1;
-  background: #ff4336;
+  background: #00d0d0;
   -webkit-animation: interdimensional-control-keyframes 1.2s ease-out infinite;
   animation: interdimensional-control-keyframes 1.2s ease-out infinite;
 }
