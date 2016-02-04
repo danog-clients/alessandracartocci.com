@@ -114,6 +114,7 @@
                   $("#vids").append('<div class="col-lg-4 col-sm-6"><div class="lazyYT" data-youtube-id="' + item["contentDetails"]["videoId"] + '" data-ratio="16:9" data-display-duration="true">Caricamento...</div></div>');
                 });
                 token = data["nextPageToken"];
+                first = "n";
               });
             }
            $('.lazyYT').lazyYT("AIzaSyA1pCinZ69ew9Xzuv6Tui4N07AeiQmOAQQ");
