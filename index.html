@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Find yourself. Find your voice.">
+        <meta name="description" content="Scopriamo la tua voce!">
         <meta name="author" content="Alessandra Cartocci">
         <title>Alessandra Cartocci</title>
         <!-- Favicons -->
@@ -38,6 +38,8 @@
         <link rel="stylesheet" href="css/animate.min.css" type="text/css">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/creative.css?v=hiccup-toothless_astrid-stormfly_applebloom_pinkiepie_bloom_yay" type="text/css">
+
+        <link rel="stylesheet" href="css/lazyYT.css?v=hiccup-toothless_astrid-stormfly_applebloom_pinkiepie_bloom_yay" type="text/css">
         <link rel="stylesheet" href="css/interdimensional.css?new=y">
         <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
         <script type="text/javascript">
@@ -70,7 +72,8 @@
         <script type="text/javascript" src="/js/typed.js"></script>
         <script type="text/javascript" src="/js/jquery.vide.js?v=magix"></script>
         <script src="js/interdimensional.min.js"></script>
-        <script src="js/contact_me.js?v=dragonsofberk"></script>
+        <script src="js/contact_me.js?v=mlp"></script>
+        <script src="js/lazyYT.js?v=mlp"></script>
         <script>
         $(document).ready(function() {
             $(".riduci").shorten({
@@ -91,6 +94,33 @@
                 loopCount: false,
             });
             Interdimensional.charge();
+            var url = "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLT8DjNCCGixmYEMjGorRhtoAxfD87EtNu&key=AIzaSyA1pCinZ69ew9Xzuv6Tui4N07AeiQmOAQQ&pageToken=";
+            var array = [];
+            var token;
+            var orig;
+            var first;
+            $.getJSON(url, function(data) {
+              $.each(data["items"], function(i, item) {
+                array.push(item["contentDetails"]["videoId"]);
+              });
+              token = data["nextPageToken"];
+              first = "y";
+            });
+
+            while (first == "y") {
+              $.getJSON(url + token, function(data) {
+                $.each(data["items"], function(i, item) {
+                  array.push(item["contentDetails"]["videoId"]);
+                });
+                token = data["nextPageToken"];
+              });
+            }
+
+            $.each(array, function(i, it) {
+            alert(it);
+          });
+
+          $('.lazyYT').lazyYT();
         });
         $('.carousel').carousel({
             interval: 2000 //changes the speed

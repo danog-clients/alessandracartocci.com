@@ -45,14 +45,14 @@ function() {
                         $('#success1 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success1 > .alert-success')
-                            .append("<strong>Your message has been sent. </strong>");
+                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! </strong>");
                         $('#success1 > .alert-success')
                             .append('</div>');
                     } else {
                         $('#success1').html("<div class='alert alert-danger'>");
                         $('#success1 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                        $('#success1 > .alert-danger').append("<strong>Sorry " + firstName + ", it seems an error occurred (" + data.error.message + "). Please try again later!");
+                        $('#success1 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che ci sia stato un errore (" + data.error.message + "). Riprova pi&ugrave; tardi!");
                         $('#success1 > .alert-danger').append('</div>');
                     };
 
@@ -64,7 +64,7 @@ function() {
                     $('#success1').html("<div class='alert alert-danger'>");
                     $('#success1 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success1 > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my server is not responding. Please try again later!");
+                    $('#success1 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che il mio server non stia rispondendo. Riprova pi&ugrave; tardi!");
                     $('#success1 > .alert-danger').append('</div>');
                     //clear all fields
                     $("#subscribe1").trigger("reset");
@@ -122,14 +122,14 @@ function() {
                         $('#success2 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success2 > .alert-success')
-                            .append("<strong>Your message has been sent. </strong>");
+                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! </strong>");
                         $('#success2 > .alert-success')
                             .append('</div>');
                     } else {
                         $('#success2').html("<div class='alert alert-danger'>");
                         $('#success2 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                        $('#success2 > .alert-danger').append("<strong>Sorry " + firstName + ", it seems an error occurred (" + data.error.message + "). Please try again later!");
+                        $('#success1 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che ci sia stato un errore (" + data.error.message + "). Riprova pi&ugrave; tardi!");
                         $('#success2 > .alert-danger').append('</div>');
                     };
 
@@ -141,7 +141,7 @@ function() {
                     $('#success2').html("<div class='alert alert-danger'>");
                     $('#success2 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success2 > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my server is not responding. Please try again later!");
+                    $('#success1 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che il mio server non stia rispondendo. Riprova pi&ugrave; tardi!");
                     $('#success2 > .alert-danger').append('</div>');
                     //clear all fields
                     $("#subscribe2").trigger("reset");
@@ -200,14 +200,14 @@ function() {
                         $('#success3 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success3 > .alert-success')
-                            .append("<strong>Your message has been sent. You will soon recieve your ebook. </strong>");
+                            .append("<strong>Grazie! Tieni d’occhio la tua casella di posta elettronica e a breve riceverai il tuo eBook! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam!</strong>");
                         $('#success3 > .alert-success')
                             .append('</div>');
                     } else {
                         $('#success3').html("<div class='alert alert-danger'>");
                         $('#success3 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                        $('#success3 > .alert-danger').append("<strong>Sorry " + firstName + ", it seems an error occurred (" + data.error.message + "). Please try again later!");
+                        $('#success1 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che ci sia stato un errore (" + data.error.message + "). Riprova pi&ugrave; tardi!");
                         $('#success3 > .alert-danger').append('</div>');
                     };
 
@@ -219,7 +219,7 @@ function() {
                     $('#success3').html("<div class='alert alert-danger'>");
                     $('#success3 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success3 > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my server is not responding. Please try again later!");
+                    $('#success1 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che il mio server non stia rispondendo. Riprova pi&ugrave; tardi!");
                     $('#success3 > .alert-danger').append('</div>');
                     //clear all fields
                     $("#subscribe3").trigger("reset");
