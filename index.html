@@ -104,10 +104,11 @@
                 $("#vids").append('<div class="col-lg-4 col-sm-6"><div class="lazyYT" data-youtube-id="' + item["contentDetails"]["videoId"] + '" data-ratio="16:9" data-display-duration="true">Caricamento...</div></div>');
               });
               token = data["nextPageToken"];
+              orig = token;
               first = "y";
             });
 
-            while (first == "y") {
+            while (first == "y" || orig != token) {
               $.getJSON(url + token, function(data) {
                 $.each(data["items"], function(i, item) {
                   $("#vids").append('<div class="col-lg-4 col-sm-6"><div class="lazyYT" data-youtube-id="' + item["contentDetails"]["videoId"] + '" data-ratio="16:9" data-display-duration="true">Caricamento...</div></div>');
