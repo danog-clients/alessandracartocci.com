@@ -670,4 +670,4 @@ a.morelink {
     -o-border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round; /* Opera 11-12.1 */
     border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round;
 }
-#me { white-space:pre; };
+.me { white-space:pre; };
