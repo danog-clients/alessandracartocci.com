@@ -94,30 +94,34 @@
                 contentType: 'text', 
                 loopCount: false,
             });
-            Interdimensional.charge();
-            var url = "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLT8DjNCCGixmYEMjGorRhtoAxfD87EtNu&key=AIzaSyA1pCinZ69ew9Xzuv6Tui4N07AeiQmOAQQ&pageToken=";
-            var token;
-            var orig;
-            var first;
-            $.getJSON(url, function(data) {
-              $.each(data["items"], function(i, item) {
-                $("#vids").append('<div class="col-lg-4 col-sm-6"><div class="lazyYT" data-youtube-id="' + item["contentDetails"]["videoId"] + '" data-ratio="16:9" data-display-duration="true">Caricamento...</div></div>');
-              });
-              token = data["nextPageToken"];
-              orig = token;
-              first = "y";
+            Interdimensional.charge();            var url = "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLT8DjNCCGixmYEMjGorRhtoAxfD87EtNu&key=AIzaSyA1pCinZ69ew9Xzuv6Tui4N07AeiQmOAQQ&pageToken=";
+            var token = "";
+            jQuery.extend({
+                getValues: function(url) {
+                    var result = $.ajax({
+                        url: url,
+                        type: 'get',
+                        dataType: 'json',
+                        async: false,
+                        success: function(data) {
+                            $.each(data["items"], function(i, item) {
+                              $("#vids").append('<div class="col-lg-4 col-sm-6"><div class="lazyYT" data-youtube-id="' + item["contentDetails"]["videoId"] + '" data-ratio="16:9" data-display-duration="true">Caricamento...</div></div>');console.log(item["contentDetails"]["videoId"]);
+                            });
+                            return data;
+                        }
+                    }).responseText;
+                    result =  jQuery.parseJSON(result);
+                    console.log(result);
+                    return result.nextPageToken;
+                }
             });
-
-            while (first == "y" || orig != token) {
-              $.getJSON(url + token, function(data) {
-                $.each(data["items"], function(i, item) {
-                  $("#vids").append('<div class="col-lg-4 col-sm-6"><div class="lazyYT" data-youtube-id="' + item["contentDetails"]["videoId"] + '" data-ratio="16:9" data-display-duration="true">Caricamento...</div></div>');
-                });
-                token = data["nextPageToken"];
-                first = "n";
-              });
-            }
-           $('.lazyYT').lazyYT("AIzaSyA1pCinZ69ew9Xzuv6Tui4N07AeiQmOAQQ");
+            token = $.getValues(url);
+            if (token){
+              while (token) {
+                token = $.getValues(url + token);
+              };
+            };
+            $('.lazyYT').lazyYT("AIzaSyA1pCinZ69ew9Xzuv6Tui4N07AeiQmOAQQ");
         });
         $('.carousel').carousel({
             interval: 2000 //changes the speed
