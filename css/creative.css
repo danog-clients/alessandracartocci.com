@@ -178,7 +178,7 @@ header {
     text-align: center;
     color: #fff;
     background: url("https://alessandracartocci.com/img/bg.jpg");
-    z-index: -10;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
