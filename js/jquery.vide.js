@@ -236,7 +236,7 @@
     $wrapper = vide.$wrapper = $('<div>')
       .addClass(settings.className)
       .css({
-        position: 'absolute',
+        position: 'relative',
         'z-index': -1,
         top: 0,
         left: 0,
