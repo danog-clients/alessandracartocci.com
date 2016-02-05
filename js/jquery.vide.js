@@ -248,7 +248,7 @@
         'background-size': 'cover',
         'background-color': settings.bgColor,
         'background-repeat': 'no-repeat',
-        'background-position': 'left'
+        'background-position': 'left top'
       });
 
     // Get a poster path
