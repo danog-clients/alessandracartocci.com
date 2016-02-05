@@ -32,6 +32,7 @@ function() {
                 cache: false,
                 success: function(data) {
                     var data = $.parseJSON(data);
+                    $("#btnSubmit1").attr("disabled", false);
                     if(data.success == true) {
                         if(data.result !== "ok") { var win = window.open(data.result, '_blank'); };
                         if(win){
@@ -40,7 +41,7 @@ function() {
                         }
                         //Broswer has blocked it
                         // Enable button & show success message    
-                        $("#btnSubmit1").attr("disabled", false);
+
                         $("#success1").html("<div class='alert alert-success'>");
                         $('#success1 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
@@ -109,6 +110,7 @@ function() {
                 success: function(data) {
                     console.log(data);
                     var data = $.parseJSON(data);
+                    $("#btnSubmit2").attr("disabled", false);
                     if(data.success == true) {
                         if(data.result !== "ok") { var win = window.open(data.result, '_blank'); };
                         if(win){
@@ -117,7 +119,6 @@ function() {
                         }
                         //Broswer has blocked it
                         // Enable button & show success message    
-                        $("#btnSubmit2").attr("disabled", false);
                         $("#success2").html("<div class='alert alert-success'>");
                         $('#success2 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
@@ -187,6 +188,7 @@ function() {
                 success: function(data) {
                     console.log(data);
                     var data = $.parseJSON(data);
+                    $("#btnSubmit3").attr("disabled", false);
                     if(data.success == true) {
                         if(data.result !== "ok") { var win = window.open(data.result, '_blank'); };
                         if(win){
@@ -195,7 +197,6 @@ function() {
                         }
                         //Broswer has blocked it
                         // Enable button & show success message    
-                        $("#btnSubmit3").attr("disabled", false);
                         $("#success3").html("<div class='alert alert-success'>");
                         $('#success3 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
