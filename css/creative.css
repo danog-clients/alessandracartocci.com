@@ -665,7 +665,7 @@ a.morelink {
     font-weight: bold;
 }
 .border{ 
-    border: 15px solid transparent;
+    border: 20px solid transparent;
     -webkit-border-image: url("ttps://alessandracartocci.com/img/bg.jpg") 30 round; /* Safari 3.1-5 */
     -o-border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round; /* Opera 11-12.1 */
     border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round;
