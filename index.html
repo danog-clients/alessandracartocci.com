@@ -125,6 +125,10 @@
         $('.carousel').carousel({
             interval: 2000 //changes the speed
         });
+        $('.nav a').on('click', function(){
+           $('.btn-navbar').click(); //bootstrap 2.x
+           $('.navbar-toggle').click() //bootstrap 3.x by Richard
+        });
     </script>
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
