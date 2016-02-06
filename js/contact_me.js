@@ -46,7 +46,7 @@ function() {
                         $('#success1 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success1 > .alert-success')
-                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! </strong>");
+                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam! </strong>");
                         $('#success1 > .alert-success')
                             .append('</div>');
                     } else {
@@ -123,7 +123,7 @@ function() {
                         $('#success2 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success2 > .alert-success')
-                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! </strong>");
+                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam! </strong>");
                         $('#success2 > .alert-success')
                             .append('</div>');
                     } else {
@@ -201,7 +201,7 @@ function() {
                         $('#success3 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success3 > .alert-success')
-                            .append("<strong>Grazie! Tieni d’occhio la tua casella di posta elettronica e a breve riceverai il tuo eBook! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam!</strong>");
+                            .append("<strong>Grazie! Tieni d’occhio la tua casella di posta elettronica e a breve riceverai il tuo eBook! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam! </strong>");
                         $('#success3 > .alert-success')
                             .append('</div>');
                     } else {
