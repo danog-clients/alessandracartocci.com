@@ -197,6 +197,7 @@ function() {
                             .append("</button>");
                         $('#success4 > .alert-success')
                             .append("<strong>Grazie! Tieni d’occhio la tua casella di posta elettronica e a breve riceverai il tuo eBook! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam! </strong>");
+                        $("#share").css("display", "block");
                         $('#success4 > .alert-success')
                             .append('</div>');
                     } else {
