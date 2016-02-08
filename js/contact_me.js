@@ -10,9 +10,6 @@ function() {
             $("#btnSubmit1").attr("disabled", true);
             event.preventDefault();
             // get values from FORM
-            var __vtrftk = $("input#__vtrftk1").val();
-            var publicid = $("input#publicid1").val();
-            var name = $("input#formname1").val();
             var names = $("input#name1").val();
             var email = $("input#email1").val();
             var lastName = names.split(" ").pop();
@@ -24,10 +21,11 @@ function() {
                     firstname: firstName,
                     lastname: lastName,
                     email: email,
-                    __vtrftk: __vtrftk,
-                    name: name,
+                    __vtrftk: "sid:9ab1e2959995ee23fe554d51f2ee5b8b9a3bc7b1,1454884194",
+                    name: "prova",
                     urlencodeenable: "1",
-                    publicid: publicid
+                    leadsource: "Web Site",
+                    publicid: "28b64ff62190dbd297ff9fb688519454"
                 },
                 cache: false,
                 success: function(data) {
@@ -76,84 +74,6 @@ function() {
             return $(this).is(":visible");
         },
     });
-
-    $("#subscribe2").find("input").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            // Prevent spam click and default submit behaviour
-            $("#btnSubmit2").attr("disabled", true);
-            event.preventDefault();
-            // get values from FORM
-            var __vtrftk = $("input#__vtrftk2").val();
-            var publicid = $("input#publicid2").val();
-            var name = $("input#formname2").val();
-            var names = $("input#name2").val();
-            var email = $("input#email2").val();
-            var lastName = names.split(" ").pop();
-            var firstName = names.replace(lastName,'');
-            $.ajax({
-                url: "https://server.alessandracartocci.com/proxy.php",
-                type: "POST",
-                data: {
-                    firstname: firstName,
-                    lastname: lastName,
-                    email: email,
-                    __vtrftk: __vtrftk,
-                    name: name,
-                    urlencodeenable: "1",
-                    publicid: publicid
-                },
-                cache: false,
-                success: function(data) {
-                    console.log(data);
-                    var data = $.parseJSON(data);
-                    $("#btnSubmit2").attr("disabled", false);
-                    if(data.success == true) {
-                        if(data.result !== "ok") { var win = window.open(data.result, '_blank'); };
-                        if(win){
-                            //Browser has allowed it to be opened
-                            win.focus();
-                        }
-                        //Broswer has blocked it
-                        // Enable button & show success message    
-                        $("#success2").html("<div class='alert alert-success'>");
-                        $('#success2 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
-                        $('#success2 > .alert-success')
-                            .append("<strong>Grazie! Riceverai tutti gli aggiornamenti! P.S. Se non dovesse arrivarti subito, controlla se, per caso, il tuo provider di posta non ci ha spostati nella casella spam! </strong>");
-                        $('#success2 > .alert-success')
-                            .append('</div>');
-                    } else {
-                        $('#success2').html("<div class='alert alert-danger'>");
-                        $('#success2 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
-                        $('#success2 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che ci sia stato un errore (" + data.error.message + "). Riprova pi&ugrave; tardi!");
-                        $('#success2 > .alert-danger').append('</div>');
-                    };
-
-                    //clear all fields
-                    $("#subscribe2").trigger("reset");
-                },
-                error: function() {
-                    // Fail message
-                    $('#success2').html("<div class='alert alert-danger'>");
-                    $('#success2 > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success2 > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che il mio server non stia rispondendo. Riprova pi&ugrave; tardi!");
-                    $('#success2 > .alert-danger').append('</div>');
-                    //clear all fields
-                    $("#subscribe2").trigger("reset");
-                },
-            });
-        },
-        filter: function() {
-            return $(this).is(":visible");
-        },
-    });
-
     $("#subscribe3").find("input").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -164,9 +84,6 @@ function() {
             $("#btnSubmit3").attr("disabled", true);
             event.preventDefault();
             // get values from FORM
-            var __vtrftk = $("input#__vtrftk3").val();
-            var publicid = $("input#publicid3").val();
-            var name = $("input#formname3").val();
             var names = $("input#name3").val();
             var email = $("input#email3").val();
             var lastName = names.split(" ").pop();
@@ -178,11 +95,12 @@ function() {
                     firstname: firstName,
                     lastname: lastName,
                     email: email,
-                    __vtrftk: __vtrftk,
-                    name: name,
+                    __vtrftk: "sid:9ec2ae03f52a0a4f4f9a8395292d5b86b7075629,1454884152",
+                    name: "eBook",
                     urlencodeenable: "1",
                     description: "eBook",
-                    publicid: publicid
+                    leadsource: "Web Site",
+                    publicid: "674351d3573cebe8c15c739cf0da0a29"
                 },
                 cache: false,
                 success: function(data) {
@@ -243,9 +161,6 @@ function() {
             $("#btnSubmit4").attr("disabled", true);
             event.preventDefault();
             // get values from FORM
-            var __vtrftk = $("input#__vtrftk4").val();
-            var publicid = $("input#publicid4").val();
-            var name = $("input#formname4").val();
             var names = $("input#name4").val();
             var email = $("input#email4").val();
             var lastName = names.split(" ").pop();
@@ -257,11 +172,12 @@ function() {
                     firstname: firstName,
                     lastname: lastName,
                     email: email,
-                    __vtrftk: __vtrftk,
-                    name: name,
+                    __vtrftk: "sid:6c1fbd9bf538487225fa6ce389f6131e5452c8df,1454918494",
+                    name: "Opt-int da Facebook",
                     urlencodeenable: "1",
                     description: "eBook",
-                    publicid: publicid
+                    leadsource: "Facebook",
+                    publicid: "e519da64042d78119887bc4e8b880236"
                 },
                 cache: false,
                 success: function(data) {
