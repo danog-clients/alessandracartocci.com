@@ -10,7 +10,7 @@ function() {
             $("#btnSubmit1").attr("disabled", true);
             event.preventDefault();
             // get values from FORM
-            var names = $("input#name1").val();
+            var names = $.trim($("input#name1").val());
             var email = $("input#email1").val();
             var lastName = names.split(" ").pop();
             var firstName = names.replace(lastName,'');
@@ -84,7 +84,7 @@ function() {
             $("#btnSubmit3").attr("disabled", true);
             event.preventDefault();
             // get values from FORM
-            var names = $("input#name3").val();
+            var names = $.trim($("input#name3").val());
             var email = $("input#email3").val();
             var lastName = names.split(" ").pop();
             var firstName = names.replace(lastName,'');
@@ -161,7 +161,7 @@ function() {
             $("#btnSubmit4").attr("disabled", true);
             event.preventDefault();
             // get values from FORM
-            var names = $("input#name4").val();
+            var names = $.trim($("input#name4").val());
             var email = $("input#email4").val();
             var lastName = names.split(" ").pop();
             var firstName = names.replace(lastName,'');
