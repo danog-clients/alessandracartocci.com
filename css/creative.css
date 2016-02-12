@@ -672,4 +672,10 @@ a.morelink {
     border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round;
 }
 .me { white-space:pre; };
-
+.blue {
+    color: #fff;
+    background-color: #00d0d0;
+}
+.eulb {
+    color: #00d0d0;
+}
