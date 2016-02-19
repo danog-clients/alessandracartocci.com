@@ -177,7 +177,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background: url("https://alessandracartocci.com/img/bg.jpg");
+    background: url("//alessandracartocci.com/img/bg.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -668,8 +668,8 @@ a.morelink {
 .border{ 
     border: 35px solid transparent;
     -webkit-border-image: url("ttps://alessandracartocci.com/img/bg.jpg") 30 round; /* Safari 3.1-5 */
-    -o-border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round; /* Opera 11-12.1 */
-    border-image: url("https://alessandracartocci.com/img/bg.jpg") 30 round;
+    -o-border-image: url("//alessandracartocci.com/img/bg.jpg") 30 round; /* Opera 11-12.1 */
+    border-image: url("//alessandracartocci.com/img/bg.jpg") 30 round;
 }
 .me { white-space:pre; };
 .blue {

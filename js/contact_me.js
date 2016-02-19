@@ -1,5 +1,6 @@
 $(
 function() {
+    var url = ('https:' == document.location.protocol ? 'https://' : 'http://') + "server.alessandracartocci.com/proxy.php";
     $("#subscribe1").find("input").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -15,7 +16,7 @@ function() {
             var lastName = names.split(" ").pop();
             var firstName = names.replace(lastName,'');
             $.ajax({
-                url: "https://server.alessandracartocci.com/proxy.php",
+                url: url,
                 type: "POST",
                 data: {
                     firstname: firstName,
@@ -89,7 +90,7 @@ function() {
             var lastName = names.split(" ").pop();
             var firstName = names.replace(lastName,'');
             $.ajax({
-                url: "https://server.alessandracartocci.com/proxy.php",
+                url: url,
                 type: "POST",
                 data: {
                     firstname: firstName,
@@ -166,7 +167,7 @@ function() {
             var lastName = names.split(" ").pop();
             var firstName = names.replace(lastName,'');
             $.ajax({
-                url: "https://server.alessandracartocci.com/proxy.php",
+                url: url,
                 type: "POST",
                 data: {
                     firstname: firstName,

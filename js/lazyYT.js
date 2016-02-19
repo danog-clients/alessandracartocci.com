@@ -117,7 +117,7 @@
         }
         
         $thumb = $el.find('.ytp-thumbnail').css({
-            'background-image': ['url(https://img.youtube.com/vi/', id, '/', thumb_img, ')'].join('')
+            'background-image': ['url(//youtube.com/vi/', id, '/', thumb_img, ')'].join('')
         })
             .addClass('lazyYT-image-loaded')
             .on('click', function (e) {
@@ -134,8 +134,9 @@
             });
 
         if ((!title && display_title) || display_duration) {
-            var youtube_data_url = ['https://www.googleapis.com/youtube/v3/videos?id=', id, '&key=', settings.yt_api_key, '&part=snippet'];
-            if (display_duration) youtube_data_url.push(',contentDetails'); // this extra info now costs some quota points, so we retrieve it only when necessary. More on quota: https://developers.google.com/youtube/v3/getting-started#quota
+            var youtube_data_url = ('https:' == document.location.protocol ? 'https://' : 'http://') + ['www.googleapis.com/youtube/v3/videos?id=', id, '&key=', settings.yt_api_key, '&part=snippet'];
+            if (display_duration) youtube_data_url.push(',contentDetails');
+            // this extra info now costs some quota points, so we retrieve it only when necessary. More on quota: https://developers.google.com/youtube/v3/getting-started#quota
             
             $.getJSON(youtube_data_url.join(''), function (data) {
                 var item = data.items[0];
