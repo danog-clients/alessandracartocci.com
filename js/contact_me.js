@@ -1,6 +1,7 @@
 $(
 function() {
     var url = ('https:' == document.location.protocol ? 'https://' : 'http://') + "server.alessandracartocci.com/proxy.php";
+    console.log(url);
     $("#subscribe1").find("input").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
