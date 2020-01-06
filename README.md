@@ -1,2 +1,2 @@
-# alessandracartocci.com
-Repository sito alessandracartocci.com
+# legacy
+[Legacy project](https://shit.daniil.it)
